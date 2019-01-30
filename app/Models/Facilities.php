@@ -20,11 +20,12 @@ class Facilities extends Model
 
     public function _7aside()
     {
+        return $this->hasMany('App\Models\Pitches', 'venue_affiliation');
     }
 
     public function _11aside()
     {
-
+        return $this->hasMany('App\Models\Pitches', 'venue_affiliation');
     }
 
 }
