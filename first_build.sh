@@ -25,8 +25,5 @@ php artisan admin:import helpers
 echo 'php artisan admin:import media-manager'
 php artisan admin:import media-manager
 
-
-
-
-
-
+echo 'php artisan admin:import backup'
+php artisan admin:import backup

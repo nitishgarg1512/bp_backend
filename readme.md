@@ -8,6 +8,7 @@
 - Run `php artisan admin:install`
 - Run `php artisan admin:import helpers`
 - Run `php artisan admin:import media-manager`
+- Run `php artisan admin:import backup`
 - Run `php artisan server`
 
 #### solution 2 ####
