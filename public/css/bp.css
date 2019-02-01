@@ -1,0 +1,25 @@
+.login-page, .register-page {
+    background: #232323;
+}
+
+.login-logo, .register-logo {
+    font-size: 15px !important;
+}
+
+.login-box-body, .register-box-body {
+    background-color: transparent !important;
+}
+
+.login-logo a {
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #4550B9 !important;
+    width: 140px;
+    border-radius: 20px !important;
+}
+
+.powerby {
+
+}
