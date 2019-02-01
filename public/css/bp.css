@@ -1,5 +1,6 @@
 .login-page, .register-page {
     background: #232323;
+    position: relative;
 }
 
 .login-logo, .register-logo {
@@ -8,6 +9,26 @@
 
 .login-box-body, .register-box-body {
     background-color: transparent !important;
+}
+
+.login-avatar {
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    text-align: center;
+    margin: 0 auto 10px;
+    position: relative;
+}
+
+.login-avatar img {
+    width: 50px;
+    height: 62px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -31px;
 }
 
 .login-logo a {
@@ -21,5 +42,7 @@
 }
 
 .powerby {
-
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
