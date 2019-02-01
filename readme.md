@@ -1,6 +1,7 @@
 ### How to run ###
 
 #### solution 1 ####
+
 - Run `composer install`
 - Run `npm install`
 - copy `.env.example` to `.env`. Update database information and necessary info
