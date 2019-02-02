@@ -29,6 +29,7 @@ class CheckingDomain
         $request->headers->add(['LP_NAME' => $model->name]);
         $request->headers->add(['LP_SHORT_NAME' => $model->short_name]);
         $request->headers->add(['LP_CODE' => $model->code]);
+        $request->headers->add(['LP_IS_ADMIN' => $model->is_admin]);
         $request->headers->add(['LP_LOGO' => HelperDomain::getImageViaDomain($model->logo)]);
 
         /**
@@ -38,6 +39,7 @@ class CheckingDomain
         view()->share('lpName', $model->name);
         view()->share('lpShortName', $model->short_name);
         view()->share('lpCode', $model->code);
+        view()->share('lpIsAdmin', $model->is_admin);
         view()->share('lpLogo', HelperDomain::getImageViaDomain($model->logo));
 
         return $next($request);

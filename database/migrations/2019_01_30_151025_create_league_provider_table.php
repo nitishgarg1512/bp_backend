@@ -21,6 +21,7 @@ class CreateLeagueProviderTable extends Migration
             $table->string('subdomain')->unique();
             $table->string('logo');
             $table->integer('general_overseer_id')->index();
+            $table->boolean('is_admin')->default(0);
             $table->timestamps();
         });
     }
