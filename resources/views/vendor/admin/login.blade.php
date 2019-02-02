@@ -27,6 +27,7 @@
 <body class="hold-transition login-page" @if(config('admin.login_background_image'))style="background: url({{config('admin.login_background_image')}}) no-repeat;background-size: cover;"@endif>
 <div class="powerby">
     Powered by BallerProfile
+    <img src="/img/icon-bp.png" />
 </div>
 <div class="login-box">
   <div class="login-avatar">
