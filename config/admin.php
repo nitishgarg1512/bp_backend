@@ -312,10 +312,8 @@ return [
     |
     */
     'extensions' => [
-	'media-manager' => [
-        
-            // Select a local disk that you configured in `config/filesystem.php`
-            'disk' => 'public'
+        'media-manager' => [
+            'disk' => 'admin'   // Points to the disk set in config/filesystem.php
         ],
     ],
 ];

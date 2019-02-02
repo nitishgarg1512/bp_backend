@@ -31,11 +31,10 @@
 </div>
 <div class="login-box">
   <div class="login-avatar">
-       <img src="/img/logo_league.png" />
+       <img src="{{ $logo }}" />
   </div>
   <div class="login-logo">
-
-    <a href="{{ admin_base_path('/') }}"><b>{{config('admin.name')}}</b></a>
+    <a href="{{ admin_base_path('/') }}"><b>{{ $name }}</b></a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
