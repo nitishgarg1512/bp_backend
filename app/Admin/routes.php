@@ -12,4 +12,8 @@ Route::group([
 
     $router->get('/', 'HomeController@index');
 
+    $router->resource('league_providers', LeagueProviderController::class);
+    $router->resource('staff', StaffController::class);
+    $router->resource('venues', VenuesController::class);
+
 });

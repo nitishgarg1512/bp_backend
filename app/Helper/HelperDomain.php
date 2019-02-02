@@ -21,8 +21,8 @@ class HelperDomain
         return $domain;
     }
 
-    public static function getImageViaDomain($domain, $image)
+    public static function getImageViaDomain($image)
     {
-        return '/storage/' . trim($domain) . '/' . trim($image);
+        return '/storage/' . trim($image);
     }
 }

@@ -14,6 +14,8 @@ class LeagueProviderController extends Controller
 {
     use HasResourceActions;
 
+    protected static $title = 'League Provider';
+
     /**
      * Index interface.
      *
@@ -23,8 +25,8 @@ class LeagueProviderController extends Controller
     public function index(Content $content)
     {
         return $content
-            ->header('Index')
-            ->description('description')
+            ->header(self::$title . ' List')
+            ->description('list')
             ->body($this->grid());
     }
 
@@ -38,7 +40,7 @@ class LeagueProviderController extends Controller
     public function show($id, Content $content)
     {
         return $content
-            ->header('Detail')
+            ->header(self::$title . 'Detail')
             ->description('description')
             ->body($this->detail($id));
     }
@@ -53,7 +55,7 @@ class LeagueProviderController extends Controller
     public function edit($id, Content $content)
     {
         return $content
-            ->header('Edit')
+            ->header(self::$title . 'Edit')
             ->description('description')
             ->body($this->form()->edit($id));
     }
@@ -67,7 +69,7 @@ class LeagueProviderController extends Controller
     public function create(Content $content)
     {
         return $content
-            ->header('Create')
+            ->header(self::$title . 'Create')
             ->description('description')
             ->body($this->form());
     }
@@ -82,6 +84,10 @@ class LeagueProviderController extends Controller
         $grid = new Grid(new LeagueProvider);
 
         $grid->id('ID');
+        $grid->name('Name');
+        $grid->short_name('Short Name');
+        $grid->code('Code');
+        $grid->subdomain('Subdomain');
         $grid->created_at('Created at');
         $grid->updated_at('Updated at');
 
@@ -99,6 +105,8 @@ class LeagueProviderController extends Controller
         $show = new Show(LeagueProvider::findOrFail($id));
 
         $show->id('ID');
+        $show->name('Name');
+        $show->subdomain('Subdomain');
         $show->created_at('Created at');
         $show->updated_at('Updated at');
 
@@ -114,9 +122,14 @@ class LeagueProviderController extends Controller
     {
         $form = new Form(new LeagueProvider);
 
-        $form->display('ID');
-        $form->display('Created at');
-        $form->display('Updated at');
+        $form->display('id', 'ID');
+        $form->text('name', 'Name');
+        $form->text('sort_name', 'Short Name');
+        $form->text('code', 'Code');
+        $form->text('subdomain', 'Subdomain');
+        $form->image('logo', 'Logo');
+        $form->display('created_at', 'Created at');
+        $form->display('updated_at', 'Updated at');
 
         return $form;
     }

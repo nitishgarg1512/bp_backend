@@ -16,6 +16,8 @@ class CreateLeagueProviderTable extends Migration
         Schema::create('league_provider', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->string('short_name');
+            $table->string('code');
             $table->string('subdomain')->unique();
             $table->string('logo');
             $table->integer('general_overseer_id')->index();
