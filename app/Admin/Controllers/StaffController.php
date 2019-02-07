@@ -25,7 +25,7 @@ class StaffController extends Controller
         return $content
             ->header('Index')
             ->description('description')
-            ->body($this->grid());
+            ->body(view('admin::staff.index'));
     }
 
     /**

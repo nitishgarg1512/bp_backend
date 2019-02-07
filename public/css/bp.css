@@ -52,3 +52,108 @@
     width: 140px;
     border-radius: 20px !important;
 }
+
+.main-sidebar, .left-side {
+    padding-top: 0 !important;
+    background-color: #232323 !important;
+}
+
+.sidebar-menu {
+    background-color: #232323 !important;
+}
+
+.skin-blue-light .sidebar-menu>li {
+    padding: 5px;
+}
+
+.skin-blue-light .sidebar-menu>li>a {
+    padding: 5px !important;
+}
+
+.skin-blue-light .sidebar-menu>li>a:hover,
+.skin-blue-light .sidebar-menu>li:hover>a,
+.skin-blue-light .sidebar-menu>li.active>a {
+    background-color: #313131;!important;
+    color: #FFFFFF !important;
+    padding: 5px !important;
+    border-radius: 10px;
+}
+
+.user-panel {
+    width: auto !important;
+    background: #FFFFFF;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.skin-blue-light .sidebar a {
+    color: #AAA !important;
+}
+
+.treeview a {
+    background-color: #232323 !important;
+}
+
+.sidebar-menu .treeview-menu>li>a {
+    padding: 5px 5px 5px 30px !important;
+}
+
+.sidebar-menu .treeview-menu {
+    padding-left: 0 !important;
+    margin-left: 5px;
+}
+
+.sidebar-menu .treeview-menu>li {
+    margin: 0;
+    background-color: #232323 !important;
+}
+
+.user-panel .logo a {
+    color: #6C6C6C  !important;
+}
+
+.user-panel hr {
+    margin: 5px 0 !important;
+    border-color: #DDDDDD;
+}
+
+.user-panel .role {
+    text-transform: capitalize;
+    color: #AAAAAA;
+    font-size: 11px;
+}
+
+.user-panel .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.user-panel>.image>img {
+    width: 50px !important;
+    max-width: 50px !important;
+    height: 50px !important;
+}
+
+.user-panel .dd-menu {
+    margin-top: 10px;
+}
+
+.content-wrapper {
+    position: relative;
+}
+
+.content-wrapper .content {
+    margin-top: 50px;
+}
+
+.content-wrapper .content .powerby {
+    position: absolute;
+    top: -50px;
+    font-size: 11px;
+    right: 10px;
+    z-index: 999;
+}
+
+.content-wrapper .content .powerby img {
+    width: 30px;
+}

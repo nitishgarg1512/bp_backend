@@ -9,8 +9,9 @@ Route::group([
     'namespace'     => config('admin.route.namespace'),
     'middleware'    => config('admin.route.middleware'),
 ], function (Router $router) {
-
-    $router->get('/', 'HomeController@index');
+    $router->get('/phpinfo', 'HomeController@index');
+    $router->get('/', 'DashboardController@index');
+    $router->get('/dashboard', 'DashboardController@index');
 
     $router->resource('leagueproviders', LeagueProviderController::class);
     $router->resource('staff', StaffController::class);
