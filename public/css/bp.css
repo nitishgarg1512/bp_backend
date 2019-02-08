@@ -138,7 +138,7 @@
     margin-top: 10px;
 }
 
-.content-wrapper {
+.content-wrapper .content {
     position: relative;
 }
 
@@ -151,7 +151,6 @@
     top: -50px;
     font-size: 11px;
     right: 10px;
-    z-index: 999;
 }
 
 .content-wrapper .content .powerby img {
@@ -337,4 +336,21 @@ h5.h5-site-staff {
 
 .bl {
     border-left: 1px solid #C7C7C7;
+}
+
+.c-lightred{
+    color: #ED4B51;
+}
+
+.close {
+    opacity: .5 !important;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.modal-content {
+    border-radius: 10px !important;
 }

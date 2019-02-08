@@ -42,7 +42,8 @@
                     <img src="/img/barnet.png" alt="User Image">
                 </div>
                 <div class="pull-left info">
-                    <p><b>Juventus</b></p>
+                    <p><b>Addington</b></p>
+                    <p>South East London</p>
                 </div>
             </div><!-- /.box-body -->
         </div><!-- /.box -->

@@ -190,9 +190,12 @@
                 </div>
                 <br clear="all" />
                 <!-- End Site Staff -->
-
-                <button type="button" class="btn btn-primary btn-main-primary shadow">Add User +</button>
+                @if (Admin::user()->inRoles([ROLE_GO_S, ROLE_VM_S]))
+                <button type="button" class="btn btn-primary btn-main-primary shadow" data-toggle="modal" data-target="#modal-invite-user">Add User +</button>
+                @endif
             </div><!-- /.box-body -->
         </div><!-- /.box -->
     </div>
 </div>
+
+@include('admin::modals.invite-user')

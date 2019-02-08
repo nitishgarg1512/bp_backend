@@ -12,7 +12,7 @@
     <div class="col-md-6">
         <div class="pull-right">
             <div class="input-group">
-                <button type="button" class="btn btn-primary btn-main-primary shadow">Add Venue +</button>
+                <button type="button" class="btn btn-primary btn-main-primary shadow" data-toggle="modal" data-target="#modal-add-venue">Add Venue +</button>
             </div>
         </div>
     </div>
@@ -468,3 +468,4 @@
         </div>
     </div>
 </div>
+@include('admin::modals.add-venue')
