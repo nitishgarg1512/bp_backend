@@ -354,3 +354,10 @@ h5.h5-site-staff {
 .modal-content {
     border-radius: 10px !important;
 }
+
+.modal-dialog {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+}

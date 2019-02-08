@@ -10,11 +10,19 @@ Route::group([
     'middleware'    => config('admin.route.middleware'),
 ], function (Router $router) {
     $router->get('/phpinfo', 'HomeController@index');
+
+    /** DASHBOARD */
     $router->get('/', 'DashboardController@index');
     $router->get('/dashboard', 'DashboardController@index');
 
+    /** STAFF */
+    $router->get('/staff', 'StaffController@index');
+    $router->post('/staff', 'StaffController@inviteUser');
+
+    /** VENUES */
+    $router->get('/venues', 'VenuesController@index');
+    $router->post('/venues', 'VenuesController@add');
+
     $router->resource('leagueproviders', LeagueProviderController::class);
-    $router->resource('staff', StaffController::class);
-    $router->resource('venues', VenuesController::class);
 
 });

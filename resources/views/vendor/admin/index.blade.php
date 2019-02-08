@@ -44,6 +44,6 @@
 
 <!-- REQUIRED JS SCRIPTS -->
 {!! Admin::js() !!}
-
+<script src="{{ admin_asset('/js/bp.js') }}"></script>
 </body>
 </html>
