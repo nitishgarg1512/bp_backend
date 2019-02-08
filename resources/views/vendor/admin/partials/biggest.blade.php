@@ -13,7 +13,7 @@
                 </div>
                 <div class="pull-right info2">
                     <p style="margin-left: 30px;"><b>2007</b></p>
-                    <p>Match Follows</p>
+                    <div>Match Follows</div>
                 </div>
             </div><!-- /.box-body -->
         </div><!-- /.box -->

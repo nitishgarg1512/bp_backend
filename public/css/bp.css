@@ -217,8 +217,8 @@
 }
 
 .biggest {
-    width: auto;
-}
+     width: auto;
+ }
 
 .biggest h5 {
     margin-top: 0 !important;
@@ -241,6 +241,53 @@
 .biggest>.info2 {
     padding: 5px 5px 5px 15px;
     line-height: 1;
+}
+
+.teams {
+    width: auto;
+    position: relative;
+}
+
+.teams h5 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    font-weight: bold;
+}
+
+.teams .image>img {
+    width: 50px !important;
+    max-width: 50px !important;
+    height: 50px !important;
+}
+
+.teams .info {
+    left: 55px;
+    padding: 5px 5px 5px 15px;
+    line-height: 1;
+    position: absolute;
+}
+
+.teams .info2 {
+    padding: 5px 5px 5px 15px;
+    line-height: 1;
+}
+
+.teams button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+h5.h5-venue-managers,
+h5.h5-site-staff {
+    margin-top: 20px !important;
+}
+
+.teams h5 > span > a {
+    color: #5D67C2 !important;
+    margin-left: 20px;
+    font-weight: normal;
+    font-size: 11px;
 }
 
 
