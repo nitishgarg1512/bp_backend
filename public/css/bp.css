@@ -290,4 +290,51 @@ h5.h5-site-staff {
     font-size: 11px;
 }
 
+.venue-search {
+    margin-bottom: 20px;
+}
 
+.venue-content {
+    width: auto;
+    position: relative;
+}
+
+.venue-content h5 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    font-weight: bold;
+}
+
+.venue-content .image>img {
+    width: 50px !important;
+    max-width: 50px !important;
+    height: 50px !important;
+}
+
+.venue-content .info {
+    left: 55px;
+    padding: 5px 5px 5px 15px;
+    line-height: 1;
+    position: absolute;
+}
+
+.venue-content .info2 {
+    padding: 5px 5px 5px 15px;
+    line-height: 1;
+}
+
+.leagues-teams {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.info-venue-item {
+    margin: 0 10px;
+    padding: 5px 0px;
+    border-top: 1px solid #C7C7C7;
+    border-bottom: 1px solid #C7C7C7;
+}
+
+.bl {
+    border-left: 1px solid #C7C7C7;
+}

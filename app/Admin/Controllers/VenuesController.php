@@ -25,7 +25,7 @@ class VenuesController extends Controller
         return $content
             ->header('Index')
             ->description('description')
-            ->body($this->grid());
+            ->body(view('admin::venue.index'));
     }
 
     /**
