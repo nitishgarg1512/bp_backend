@@ -157,3 +157,61 @@
 .content-wrapper .content .powerby img {
     width: 30px;
 }
+
+.d-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.btn-main-primary {
+    background-color: #4550B9 !important;
+    width: 140px;
+    border-radius: 20px !important;
+}
+
+.shadow {
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.f20 {
+    font-size: 20px;
+}
+
+.fwbold {
+    font-weight: bold;
+}
+
+.d-venue {
+    color: #929292;
+}
+
+.d-gopw {
+    color: #6AC47C;
+}
+
+.d-leagues {
+    color: #929292;
+}
+
+.d-teams {
+    color: #929292;
+}
+
+.d-region {
+    color: #929292;
+}
+
+.d-hplus {
+    color: #FF8181;
+}
+
+.d-tplus {
+    color: #A185FF;
+}
+
+.d-fplus {
+    color: #7FA6FF;
+}
