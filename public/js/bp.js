@@ -5,10 +5,14 @@ $(function() {
         });
 
         $(document).on('click', '#inviteUser', function(event) {
-            $('#inviteUserForm').hide();
-            $('#inviteUserContainer').show();
+            // $('#inviteUserForm').hide();
+            // $('#inviteUserContainer').show();
             const url = '/admin/staff';
-            $.pjax({url: url, container: '#inviteUserContainer', type: 'POST'});
+            var people = [{ first: "John", last: "Doe" }, { first: "Jane", last: "Smith" }];
+
+            const formData = $('form#inviFormAjax').serializeArray();
+console.log(formData);
+            $.pjax({url: url, container: '#inviteUserContainer', type: 'POST', dataType: 'application/json', data: people});
         });
 
         $(document).on('click', '#addVenue', function(event) {

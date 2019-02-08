@@ -6,7 +6,7 @@
                     <span aria-hidden="true" class="c-lightred">&times;</span></button>
                 <div id="inviteUserForm">
                     <h5 class="text-center">Invite a new user</h5>
-                    <form role="form">
+                    <form role="form" id="inviFormAjax">
                         <div class="box-body">
                             <div class="form-group">
                                 <input type="text" class="form-control" id="firstName" placeholder="First name">

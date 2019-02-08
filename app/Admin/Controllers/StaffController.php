@@ -83,6 +83,7 @@ class StaffController extends Controller
 
     public function inviteUser(Content $content)
     {
+        print_r(request()->request->all());exit;
         return view('admin::staff.ajax-invite');
     }
 }
