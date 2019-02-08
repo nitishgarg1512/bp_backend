@@ -8,18 +8,18 @@ class LeagueProvider extends Model
 {
     protected $table = 'league_provider';
 
-    public function venues()
+    public function generalOverseers()
     {
-        return $this->hasMany('App\Models\Venue', 'league_provider_id');
+        return $this->belongsToMany('Encore\Admin\Auth\Database\Administrator', 'lp_r_go', 'league_provider_id', 'general_overseer_id');
     }
 
-    public function leagues()
+    public function venueManagers()
     {
-        // TODO: add relationshop with leagues
+        return $this->belongsToMany('Encore\Admin\Auth\Database\Administrator', 'lp_r_vm', 'league_provider_id', 'venue_manager_id');
     }
 
-    public function generalOverseer()
+    public function staffs()
     {
-        return $this->belongsTo('App\Models\GeneralOverseer', 'general_overseer_id');
+        return $this->belongsToMany('Encore\Admin\Auth\Database\Administrator', 'lp_r_staff', 'league_provider_id', 'staff_id');
     }
 }
