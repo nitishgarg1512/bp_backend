@@ -26,6 +26,7 @@ class CheckingDomain
         }
 
         $request->headers->add(['DOMAIN_NAME' => $domain]);
+        $request->headers->add(['LP_ID' => $model->id]);
         $request->headers->add(['LP_NAME' => $model->name]);
         $request->headers->add(['LP_SHORT_NAME' => $model->short_name]);
         $request->headers->add(['LP_CODE' => $model->code]);

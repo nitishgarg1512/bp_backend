@@ -215,3 +215,32 @@
 .d-fplus {
     color: #7FA6FF;
 }
+
+.biggest {
+    width: auto;
+}
+
+.biggest h5 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.biggest>.image>img {
+    width: 50px !important;
+    max-width: 50px !important;
+    height: 50px !important;
+}
+
+.biggest>.info {
+    left: 55px;
+    padding: 5px 5px 5px 15px;
+    line-height: 1;
+    position: absolute;
+}
+
+.biggest>.info2 {
+    padding: 5px 5px 5px 15px;
+    line-height: 1;
+}
+
+
