@@ -5,12 +5,14 @@
         <div class="col-md-3 teams-item">
             <br clear="all" />
             <div class="pull-left image">
-                <img src="{{ $go['avatar'] }}" class="img-circle" />
+                <img src="{{ $s['avatar'] }}" class="img-circle" />
             </div>
             <div class="pull-left info">
-                <p><b>{{ $go['name'] }}</b></p>
-                <p>{{ $go['time'] }}</p>
-                <p>Barnet</p>
+                <p><b>{{ $s['name'] }}</b></p>
+                <p>{{ $s['time'] }}</p>
+                @isset($s['venue'])
+                    <p>{{ $s['venue'] }}</p>
+                @endisset
             </div>
             <div class="pull-left info2">
 

@@ -6,21 +6,21 @@
                     <span aria-hidden="true" class="c-lightred">&times;</span></button>
                 <div id="inviteUserForm">
                     <h5 class="text-center">Invite a new user</h5>
-                    <form role="form" id="inviFormAjax">
+                    <form role="form" id="inviFormAjax" action="" method="post">
                         <div class="box-body">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="firstName" placeholder="First name">
+                                <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First name">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="surname" placeholder="Surname (Optional)">
+                                <input type="text" class="form-control" name="surname" id="surname" placeholder="Surname (Optional)">
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" id="email" placeholder="Email">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Email">
                             </div>
                             <div class="form-group">
                                 <div class="row">
                                     <div class="col-xs-6">
-                                        <select class="form-control">
+                                        <select class="form-control" id="userType" name="userType">
                                             <option value="-1">User Type</option>
                                             <option value="GO">General Overseer</option>
                                             <option value="VM">Venue Manager</option>
@@ -28,8 +28,11 @@
                                         </select>
                                     </div>
                                     <div class="col-xs-6">
-                                        <select class="form-control">
+                                        <select class="form-control" name="venue" id="venue">
                                             <option value="-1">Venue</option>
+                                            @foreach ($venues as $venue)
+                                                <option value="{{ $venue->id }}">{{ $venue->name }}</option>
+                                            @endforeach
                                         </select>
                                     </div>
                                 </div>

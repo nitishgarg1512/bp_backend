@@ -1,3 +1,4 @@
+var reload = false;
 $(function() {
     if ($.support.pjax) {
         $(document).on('pjax:beforeSend', function(event, xhr, options) {
@@ -5,31 +6,50 @@ $(function() {
         });
 
         $(document).on('click', '#inviteUser', function(event) {
-            // $('#inviteUserForm').hide();
-            // $('#inviteUserContainer').show();
             const url = '/admin/staff';
-            var people = [{ first: "John", last: "Doe" }, { first: "Jane", last: "Smith" }];
-
             const formData = $('form#inviFormAjax').serializeArray();
-console.log(formData);
-            $.pjax({url: url, container: '#inviteUserContainer', type: 'POST', dataType: 'application/json', data: people});
+            $.pjax({
+                url: url,
+                container: '#inviteUserContainer',
+                type: 'POST',
+                data: formData
+            }).done(function(res) {
+                $('#inviteUserForm').hide();
+                $('#inviteUserContainer').show();
+                reload = true;
+            }).fail(function(res) {
+                $('#inviteUserForm').hide();
+                $('#inviteUserContainer').show();
+                console.log("FAIL");
+            });
         });
 
         $(document).on('click', '#addVenue', function(event) {
             $('#addVenueForm').hide();
             $('#addVenueContainer').show();
             const url = '/admin/venues';
-            $.pjax({url: url, container: '#addVenueContainer', type: 'POST'});
+            const formData = $('form#addVenueFormAjax').serializeArray();
+            $.pjax({url: url, container: '#addVenueContainer', type: 'POST', data: formData});
         });
     }
 
     $('#modal-invite-user').on('hidden.bs.modal', function (e) {
         $('#inviteUserForm').show();
         $('#inviteUserContainer').hide();
+
+        if (reload) {
+            location.reload();
+            reload = false;
+        }
     })
 
     $('#modal-add-venue').on('hidden.bs.modal', function (e) {
         $('#addVenueForm').show();
         $('#addVenueContainer').hide();
+
+        if (reload) {
+            location.reload();
+            reload = false;
+        }
     })
 });
