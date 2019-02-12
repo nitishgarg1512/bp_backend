@@ -33,4 +33,9 @@ class VenueRepository
     {
         return Venue::where(['league_provider_id' => $lpId])->get();
     }
+
+    public function getVenuesByAlias(string $alias)
+    {
+        return Venue::where(['alias' => $alias])->first();
+    }
 }

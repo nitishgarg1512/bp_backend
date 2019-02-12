@@ -328,7 +328,7 @@ h5.h5-site-staff {
 }
 
 .info-venue-item {
-    margin: 0 10px;
+    margin: 0px;
     padding: 5px 0px;
     border-top: 1px solid #C7C7C7;
     border-bottom: 1px solid #C7C7C7;
@@ -364,4 +364,25 @@ h5.h5-site-staff {
 
 .modal h5 {
     font-weight: bold;
+}
+
+.pitches-item,
+.facilities-item {
+    margin-top: 5px !important;
+}
+
+.pitches-item img {
+    width: 100px;
+}
+
+.pitches-aside {
+    margin-right: 10px;
+}
+
+.mb15 {
+    margin-bottom: 15px;
+}
+
+#editFacilitiesForm {
+    margin: 0 50px;
 }

@@ -22,6 +22,7 @@ Route::group([
     /** VENUES */
     $router->get('/venues', 'VenuesController@index');
     $router->post('/venues', 'VenuesController@add');
+    $router->get('/venues/{alias}', 'VenuesController@detail');
 
     $router->resource('leagueproviders', LeagueProviderController::class);
 
