@@ -10,7 +10,7 @@
     <div class="col-md-6">
         <div class="pull-left">
             <div class="input-group">
-                <div><b>16 leagues</b></div>
+                <div><b>{{ count($leagues) }} leagues</b></div>
             </div>
         </div>
     </div>
