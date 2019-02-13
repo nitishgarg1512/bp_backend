@@ -14,7 +14,9 @@ class AddFloodLightsToFacilitiesTable extends Migration
     public function up()
     {
         Schema::table('facilities', function (Blueprint $table) {
-            $table->string('flood_lights');
+            $table->boolean('flood_lights');
+            $table->boolean('near_by');
+            $table->dropColumn(array('address'));
         });
     }
 
@@ -26,7 +28,7 @@ class AddFloodLightsToFacilitiesTable extends Migration
     public function down()
     {
         Schema::table('facilities', function (Blueprint $table) {
-            $table->dropColumn(array('flood_lights'));
+            $table->dropColumn(array('flood_lights', 'near_by'));
         });
     }
 }

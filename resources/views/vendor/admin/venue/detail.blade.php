@@ -53,3 +53,4 @@
 
 @include('admin::modals.edit-facilities')
 @include('admin::modals.edit-pitches')
+@include('admin::modals.create-league')

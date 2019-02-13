@@ -13,6 +13,7 @@ class VenueRepository
         $venue->postcode_1 = $postCode1;
         $venue->postcode_2 = $postCode2;
         $venue->league_provider_id = $lpId;
+        $venue->alias = $venue->name;
         // TODO: get region from post code 1
         // TODO: temp hard code = address
         $venue->region = $venueAddress;

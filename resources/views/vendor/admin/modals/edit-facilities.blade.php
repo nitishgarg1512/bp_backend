@@ -12,7 +12,7 @@
                                 Changing rooms
                             </div>
                             <div class="pull-right">
-                                <input type="checkbox" />
+                                <input type="checkbox" id="changingRoom" <?php echo !empty($facilities) && $facilities->changing_rooms ? 'checked' : ''; ?> />
                             </div>
                         </div>
                         <div class="clearfix facilities-item">
@@ -20,7 +20,7 @@
                                 Parking
                             </div>
                             <div class="pull-right ">
-                                <input type="checkbox" />
+                                <input type="checkbox" id="parking" <?php echo !empty($facilities) && $facilities->parking ? 'checked' : ''; ?> />
                             </div>
                         </div>
                         <div class="clearfix facilities-item">
@@ -28,7 +28,7 @@
                                 Bar/Pub (Nearby)
                             </div>
                             <div class="pull-right ">
-                                <input type="checkbox" />
+                                <input type="checkbox" id="nearby" <?php echo !empty($facilities) && $facilities->near_by ? 'checked' : ''; ?> />
                             </div>
                         </div>
                         <div class="clearfix facilities-item">
@@ -36,9 +36,10 @@
                                 Flood Lights
                             </div>
                             <div class="pull-right ">
-                                <input type="checkbox" />
+                                <input type="checkbox" id="floodLights" <?php echo !empty($facilities) && $facilities->flood_lights ? 'checked' : ''; ?> />
                             </div>
                         </div>
+                        <input type="hidden" id="facilitiesVenueId" value="{{$venue->id}}" />
                     </div>
                 </div>
             </div>

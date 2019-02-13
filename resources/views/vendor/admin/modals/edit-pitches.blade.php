@@ -6,7 +6,7 @@
                     <span aria-hidden="true" class="c-lightred">&times;</span></button>
                 <div id="createPitchForm">
                     <h5 class="text-center">Create {{ $venue->name }} pitches</h5>
-                    <form role="form" id="addVenueFormAjax" action="" method="post">
+                    <form role="form" id="createPitchFormAjax" action="" method="post">
                         <div class="box-body">
                             <div class="form-group">
                                 <input type="text" class="form-control" name="pitchName" id="pitchName" placeholder="Pitch Name">
@@ -30,11 +30,12 @@
                         </div>
                         <!-- /.box-body -->
                         <div class="box-footer">
-                            <button type="button" id="addVenue" class="btn btn-primary btn-main-primary pull-right shadow">Create</button>
+                            <button type="button" id="createPitch" class="btn btn-primary btn-main-primary pull-right shadow">Create</button>
                         </div>
+                        <input type="hidden" name="pitchesVenueId" id="pitchesVenueId" value="{{$venue->id}}" />
                     </form>
                 </div>
-                <div id="createPitchForm" style="display: none;"></div>
+                <div id="createPitchContainer" style="display: none;"></div>
             </div>
         </div>
         <!-- /.modal-content -->

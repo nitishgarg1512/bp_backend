@@ -23,6 +23,10 @@ Route::group([
     $router->get('/venues', 'VenuesController@index');
     $router->post('/venues', 'VenuesController@add');
     $router->get('/venues/{alias}', 'VenuesController@detail');
+    $router->post('/venues/facilities', 'VenuesController@editFacilities');
+    $router->post('/venues/pitch', 'VenuesController@createPitch');
+    $router->post('/venues/league', 'VenuesController@createLeague');
+
 
     $router->resource('leagueproviders', LeagueProviderController::class);
 

@@ -377,6 +377,18 @@ h5.h5-site-staff {
 
 .pitches-aside {
     margin-right: 10px;
+    position: relative;
+}
+
+.pitches-aside .aside-number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -9px;
+    margin-top: -18px;
+    font-size: 38px;
+    font-weight: bold;
+    color: #fff;
 }
 
 .mb15 {
@@ -385,4 +397,8 @@ h5.h5-site-staff {
 
 #editFacilitiesForm {
     margin: 0 50px;
+}
+
+#createLeagueContainer {
+    margin: 0 75px;
 }

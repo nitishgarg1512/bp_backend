@@ -6,7 +6,7 @@
                     <b>Facilities</b>
                 </div>
                 <div class="pull-right ">
-                    <a href="javascript:void();" data-toggle="modal" data-target="#modal-edit-facilities">
+                    <a href="javascript:void(0);" data-toggle="modal" data-target="#modal-edit-facilities">
                         <i class="fa fa-edit"></i>
                     </a>
                 </div>
@@ -33,7 +33,7 @@
                     Bar/Pub (Nearby)
                 </div>
                 <div class="pull-right ">
-                    <?php echo !empty($facilities) && $facilities->address ? 'Yes' : 'No'; ?>
+                    <?php echo !empty($facilities) && $facilities->near_by ? 'Yes' : 'No'; ?>
                 </div>
             </div>
             <div class="clearfix facilities-item">

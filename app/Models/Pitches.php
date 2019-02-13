@@ -39,6 +39,12 @@ class Pitches extends Model
         ];
     }
 
+    public static function getTypeString(int $num): string
+    {
+        $types = self::getTypes();
+        return $types[$num];
+    }
+
     public static function getFormats(): array
     {
         return [
@@ -46,5 +52,11 @@ class Pitches extends Model
             self::FORMAT_7_NUM => self::FORMAT_7,
             self::FORMAT_11_NUM => self::FORMAT_11,
         ];
+    }
+
+    public static function getFormatString(int $num): string
+    {
+        $formats = self::getFormats();
+        return $formats[$num];
     }
 }
