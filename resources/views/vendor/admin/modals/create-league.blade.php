@@ -58,7 +58,12 @@
                                         Start Date
                                     </div>
                                     <div class="col-xs-6">
-                                        <input type="text" class="form-control" name="startDate" id="startDate">
+                                        <div class="input-group date">
+                                            <input type="text" class="form-control" name="startDate" id="startDate">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-calendar"></i>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -78,7 +83,12 @@
                                         Close Date
                                     </div>
                                     <div class="col-xs-6">
-                                        <input type="text" class="form-control" name="closeDate" id="closeDate">
+                                        <div class="input-group date">
+                                            <input type="text" class="form-control" name="closeDate" id="closeDate">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-calendar"></i>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

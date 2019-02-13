@@ -81,6 +81,8 @@ class VenuesController extends Controller
         $data['leagueFormats'] = League::getFormats();
         $data['leagueTypes'] = League::getTypes();
         $data['leagueChallengeLevels'] = League::getChallengeLevels();
+        $leagueRepo = new LeagueRepository();
+        $data['leagues'] = $leagueRepo->getLeagues($venue->id);
 
         return $content->body(view('admin::venue.detail', $data));
     }
@@ -136,12 +138,12 @@ class VenuesController extends Controller
         $data['leagueType'] = request()->request->get('leagueType');
         $data['leagueChallengeLevel'] = request()->request->get('leagueChallengeLevel');
         $data['startDate'] = request()->request->get('startDate');
-        $data['setCloseDate'] = request()->request->get('setCloseDate');
+        $data['setCloseDate'] = request()->request->get('setCloseDate', null);
         $data['closeDate'] = request()->request->get('closeDate');
         $data['venueId'] = request()->request->get('leagueVenueId');
 
-//        $leagueRepo = new LeagueRepository();
-//        $leagueRepo->create($data);
+        $leagueRepo = new LeagueRepository();
+        $leagueRepo->create($data);
 
         $viewData = [
             'name' => $data['leagueName'],

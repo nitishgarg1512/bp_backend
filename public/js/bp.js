@@ -4,6 +4,8 @@ $(function() {
         headers: {'X-CSRF-Token': LA.token}
     });
 
+    $('#startDate, #closeDate').datepicker();
+
     if ($.support.pjax) {
         $(document).on('pjax:beforeSend', function(event, xhr, options) {
             xhr.setRequestHeader('X-CSRF-TOKEN', LA.token);
